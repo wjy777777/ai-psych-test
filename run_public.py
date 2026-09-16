@@ -408,12 +408,11 @@ for i, q in enumerate(questions):
     st.markdown(f'<div class="question-text">{q}</div>', unsafe_allow_html=True)
     
     ans = st.text_area(
-        label="",
+        label=f"q_{i}",
         key=f"q_{i}",
         value=st.session_state.saved_answers[i],
         height=68,
-        placeholder="写下你的真实感受...",
-        label_visibility="collapsed"
+        placeholder="写下你的真实感受..."
     )
     st.session_state.saved_answers[i] = ans
     answers.append(ans)
