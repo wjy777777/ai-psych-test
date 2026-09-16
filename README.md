@@ -20,3 +20,36 @@
 ```bash
 git clone https://github.com/wjy777777/ai-psych-test.git
 cd ai-psych-test
+```
+
+2. 安装依赖：
+```bash
+pip install -r requirements.txt
+```
+
+3. 配置 API Key：
+在项目根目录创建 `.env` 文件，写入：
+```
+DEEPSEEK_API_KEY=你的真实API Key
+```
+
+4. 运行：
+```bash
+streamlit run run_public.py
+```
+
+5. 浏览器访问：
+```
+http://localhost:8501
+```
+## 项目结构
+```
+ai-psych-test/
+├── run_public.py          # 主程序
+├── requirements.txt       # 依赖清单
+├── .env.example           # API Key 配置示例
+└── README.md              # 项目说明
+```
+
+## 免责声明
+本系统仅供娱乐与自我探索参考，不构成任何医学或心理诊断建议。
